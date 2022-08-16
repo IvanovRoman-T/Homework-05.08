@@ -1,13 +1,18 @@
-﻿void ShowThirdDidit(string number){
+﻿char ShowThirdDidit(string number){
     if (number.Length < 3){
-        Console.WriteLine("Третьей цифры нет");
+        return 'a'; 
     }
     else{
-        Console.WriteLine($"Третья цифра числа {number} - {number[2]}");
+        return number[2];
     }
 }
 
 
 Console.Write("Введите целое число: ");
 string number = Console.ReadLine();
-ShowThirdDidit(number);
+if (ShowThirdDidit(number) == 'a'){
+    Console.WriteLine("Третьей цифры нет");
+}
+else {
+    Console.WriteLine($"Третья цифра числа {number} - {ShowThirdDidit(number)}");
+}

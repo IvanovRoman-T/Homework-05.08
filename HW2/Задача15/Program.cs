@@ -10,14 +10,19 @@
     }
 }
 
-void IsItWeekend(int dayNumber){
+bool IsItWeekend(int dayNumber){
     if ((dayNumber == 6) || (dayNumber == 7)){
-        Console.WriteLine("Ура!!! Это выходной!!!");
+        return true;
     }
     else{
-        Console.WriteLine("Это не выходной :(");
+        return false;
     }
 }
 
 int dayNumber = ReadWeekDayNumber();
-IsItWeekend(dayNumber);
+if (IsItWeekend(dayNumber)){
+    Console.WriteLine("Ура!!! Это выходной!!!");
+}
+else{
+    Console.WriteLine("Это не выходной :(");
+}

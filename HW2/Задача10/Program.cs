@@ -13,10 +13,9 @@
 }
 
 
-void ShowSecondDigit(int number){
-    int secondDigit = (number%100) / 10;
-    Console.WriteLine($"Вторая цифра числа {number} - {secondDigit}");
+int ShowSecondDigit(int number){
+    return (number%100) / 10;
 }
 
 int number = ReadNumber();
-ShowSecondDigit(number);
+Console.WriteLine($"Вторая цифра числа {number} - {ShowSecondDigit(number)}");
