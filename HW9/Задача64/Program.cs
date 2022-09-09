@@ -44,6 +44,6 @@ void ShowNumbersFromMToN(int M, int N, int k = 1)
 }
 
 
-int m = GetNumberM();
-int n = GetNumberN(m);
-ShowNumbersFromMToN(m, n);
+int numberM = GetNumberM();
+int numberN = GetNumberN(numberM);
+ShowNumbersFromMToN(numberM, numberN);

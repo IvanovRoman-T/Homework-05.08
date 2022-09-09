@@ -44,6 +44,6 @@ int SumNumbersFromMToN(int M, int N, int k = 1, int sum = 0)
 }
 
 
-int m = GetNumberM();
-int n = GetNumberN(m);
-System.Console.WriteLine(SumNumbersFromMToN(m, n));
+int numberM = GetNumberM();
+int numberN = GetNumberN(numberM);
+System.Console.WriteLine(SumNumbersFromMToN(numberM, numberN));
